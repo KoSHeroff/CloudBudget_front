@@ -13,17 +13,19 @@
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-
     text-transform: uppercase;
+
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
 
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
     padding: 12px 31px;
+    margin: auto ;
 
     border-radius: 6px;
     cursor: pointer;
@@ -41,7 +43,7 @@
 }
 
 .btn:hover {
-    background-color:#ED4C5C;
+    background-color: transparent;
     color: #FFFFFF;
 }
 
@@ -86,9 +88,8 @@
 
 .header-logo-name {
     text-transform: uppercase;
-    font-style: normal;
+
     font-weight: 700;
-    line-height: 22px;
     font-size: 18px;
 
     color: #FFFFFF  
@@ -105,9 +106,38 @@
 
 .header-menu-element {
     text-transform: uppercase;
+
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+}
+
+.greetings > .content {
+    align-self: center;
+    margin: auto;
+    
+    max-width: 540px;
+}
+
+.greetings > .content .content-title {
+    text-transform: uppercase;
+    text-align: center;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 72px;
+
+    color: #FFFFFF;
+}
+
+.greetings > .content .content-description {
+    text-align: center;
+    
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 150%;
+
+    margin: 40px 0 50px 0;
+    
+    color: #FFFFFF;
 }
