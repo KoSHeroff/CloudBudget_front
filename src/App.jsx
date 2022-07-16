@@ -1,5 +1,9 @@
 import description from './assets/description.png';
 
+import capabilitiesBg1 from './assets/capabilities/Bg.png';
+import capabilitiesBg2 from './assets/capabilities/Bg-1.png';
+import capabilitiesBg3 from './assets/capabilities/Bg-2.png';
+
 import './App.css'
 
 function App() {
@@ -54,6 +58,47 @@ function App() {
           <div className='description-block-text-link link'>Узнать подробнее</div>
         </div>
         <img className='description-image' src={description} />
+      </div>
+      <div className='capabilities'>
+        <div className='capabilities-title'>Возможности</div>
+        <div className='capabilities-list'>
+          <div className='capabilities-list-element'>
+            <img className='capabilities-element-image' src={capabilitiesBg1} />
+            <div className='capabilities-element-text'>
+              <div className='capabilities-element-text-title'>
+                Поддерживает все валюты и карты
+              </div>
+              <div className='capabilities-element-text-description'>
+                Мы поддерживаем все популярные валюты и полностью настраиваем, чтобы добавить
+              </div>
+              <div className='capabilities-element-text-link link'>Подробнее</div>
+            </div>
+          </div>
+          <div className='capabilities-list-element'>
+            <img className='capabilities-element-image' src={capabilitiesBg2} />
+            <div className='capabilities-element-text'>
+              <div className='capabilities-element-text-title'>
+                Управляйте своими расходами на ходу
+              </div>
+              <div className='capabilities-element-text-description'>
+                Вы можете получить доступ к своей учетной записи из любой точки мира на любом устройстве
+              </div>
+              <div className='capabilities-element-text-link link'>Подробнее</div>
+            </div>
+          </div>
+          <div className='capabilities-list-element'>
+            <img className='capabilities-element-image' src={capabilitiesBg3} />
+            <div className='capabilities-element-text'>
+              <div className='capabilities-element-text-title'>
+                Управление бюджетом осуществляется в облаке
+              </div>
+              <div className='capabilities-element-text-description'>
+                Наше приложение создано для того, чтобы вы могли управлять управлять своим бюджетом. 
+              </div>
+              <div className='capabilities-element-text-link link'>Подробнее</div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
