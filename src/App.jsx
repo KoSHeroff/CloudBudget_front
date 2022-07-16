@@ -4,6 +4,12 @@ import capabilitiesBg1 from './assets/capabilities/Bg.png';
 import capabilitiesBg2 from './assets/capabilities/Bg-1.png';
 import capabilitiesBg3 from './assets/capabilities/Bg-2.png';
 
+import { AiOutlineCloudDownload } from "react-icons/ai";
+import { RiShieldKeyholeLine } from "react-icons/ri";
+import { VscFilePdf } from "react-icons/vsc";
+import { BsFileText } from "react-icons/bs";
+
+
 import './App.css'
 
 function App() {
@@ -98,6 +104,46 @@ function App() {
               <div className='capabilities-element-text-link link'>Подробнее</div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className='technology'>
+        <div className='technology-title'>Технологии</div>
+        <div className='technology-group'>
+          <div className='technology-element'>
+            <div className='technology-element-number'>01</div>
+            <div className='technology-element-description'>
+              <div className='technology-element-description-logo icon'><AiOutlineCloudDownload /></div>
+              <div className='technology-element-description-title'>Облачное хранение</div>
+              <div className='technology-element-description-text'>Доступ из любой точки мира с любого устройства</div>
+            </div>
+          </div>
+          <div className='technology-element'>
+            <div className='technology-element-number'>02</div>
+            <div className='technology-element-description'>
+              <div className='technology-element-description-logo icon'><RiShieldKeyholeLine /></div>
+              <div className='technology-element-description-title'>Безопасность</div>
+              <div className='technology-element-description-text'>Вся информация хранится на защищенных облачных серверах</div>
+            </div>
+          </div>
+          <div className='technology-element'>
+            <div className='technology-element-number'>03</div>
+            <div className='technology-element-description'>
+              <div className='technology-element-description-logo icon'><VscFilePdf /></div>
+              <div className='technology-element-description-title'>PDF Отчеты</div>
+              <div className='technology-element-description-text'>Скачивайте ваши отчеты в удобном формате PDF</div>
+            </div>
+          </div>
+          <div className='technology-element'>
+            <div className='technology-element-number'>04</div>
+            <div className='technology-element-description'>
+              <div className='technology-element-description-logo icon'><BsFileText /></div>
+              <div className='technology-element-description-title'>CSV Отчеты</div>
+              <div className='technology-element-description-text'>Скачивайте ваши отчеты в удобном формате CSV</div>
+            </div>
+          </div>
+        </div>
+        <div className='application'>
+
         </div>
       </div>
     </>

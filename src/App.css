@@ -10,7 +10,7 @@
 
 .icon > svg {
     height: 100%;
-    aspect-ratio: 1/1;
+    width: 100%;
 }
 
 .btn {
@@ -299,6 +299,7 @@
 
     font-family: 'Roboto';
     font-size: 36px;
+    font-weight: 600;
     line-height: 42px;
 
     margin-bottom: 63px;
@@ -379,4 +380,84 @@
     .capabilities-element-text {
         top: calc(15% * -1);
     }
+}
+
+.technology {
+    min-height: 500px;
+    max-width: 1920px;
+
+    padding-top: 63px;
+    margin: auto;
+}
+
+.technology-title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+
+    margin-bottom: 52px;
+}
+
+.technology-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 0 30px;
+
+    flex-wrap: wrap;
+}
+
+.technology-element {
+    position: relative;
+    max-width: 255px;
+}
+
+.technology-element-number {
+    position: relative;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120px;
+
+    z-index: 1;
+
+    color: rgba(16, 16, 16, 0.08);
+}
+
+.technology-element-description {
+    position: relative;
+    bottom: 60px;
+}
+
+.technology-element-description-logo {
+    width: 70px;
+    margin: auto;
+    margin-bottom: 12px;
+
+    opacity: 1;
+
+    color: #ED4C5C;
+}
+
+.technology-element-description-title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+
+    margin-bottom: 11px;
+
+    color: #101010;
+}
+
+.technology-element-description-text {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
 }
