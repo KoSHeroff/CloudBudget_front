@@ -7,6 +7,9 @@
 
     box-sizing: border-box;
 }
+#root {
+    overflow-x: hidden;
+}
 
 .icon > svg {
     height: 100%;
@@ -44,6 +47,12 @@
     color: #FFFFFF;
 }
 
+.btn-color {
+    border: 1px solid #ED4C5C;
+    color: #FFFFFF;
+    background-color: #ED4C5C;
+}
+
 .btn:hover {
     background-color: transparent;
     color: #FFFFFF;
@@ -51,6 +60,11 @@
 
 .btn-fill:hover {
     background-color: #FFFFFF;
+    color: #ED4C5C;
+}
+
+.btn-color:hover {
+    background-color: transparent;
     color: #ED4C5C;
 }
 
@@ -254,6 +268,10 @@
     width: 445px;
 }
 
+.description-image.back {
+    z-index: -1;
+}
+
 @media (max-width: 800px) {
     .description-block {
         margin-top: -5px;
@@ -263,8 +281,6 @@
         width: 50%;
 
         margin: auto auto 0 -30%;
-
-        z-index: -1;
     }
 }
 
@@ -460,4 +476,99 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+}
+
+.application {
+    position: relative;
+    background-color: #ED4C5C;
+
+    color: #FFFFFF;
+}
+
+.application::after {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: -50%;
+    z-index: -1;
+    
+    width: calc(200%);
+    height: 100%;
+
+    background-color: #ED4C5C;
+
+}
+
+.icons-list {
+    display: flex;
+
+    gap: 28px;
+
+    height: 28px;
+}
+
+.icons-list > .icon {
+    cursor: pointer;
+}
+
+@media (max-width: 525px) {
+    .icons-list {
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+    
+    padding: 60px 30px;
+}
+
+.contact-text {
+    max-width: 434px;
+}
+
+.contact-text-title {
+    font-family: 'Roboto';
+    font-size: 36px;
+    line-height: 42px;
+
+    margin-bottom: 42px;
+}
+
+.contact-text-description {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.contact-form > .btn {
+    margin: 0 auto 0 0;
+}
+
+input {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    width: 100%;
+    max-width: 540px;
+    padding: 20px;
+    margin: 12px 0;
+
+    border-radius: 6px;
+    border: 1px solid #333333;
+}
+
+input:focus {
+    outline: 2px solid #ED4C5C;
+    border: 1px solid #ED4C5C;
 }

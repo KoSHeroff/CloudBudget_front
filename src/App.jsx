@@ -8,6 +8,8 @@ import { AiOutlineCloudDownload } from "react-icons/ai";
 import { RiShieldKeyholeLine } from "react-icons/ri";
 import { VscFilePdf } from "react-icons/vsc";
 import { BsFileText } from "react-icons/bs";
+import { FaGooglePlay } from "react-icons/fa";
+import { IoLogoAppleAppstore } from "react-icons/io5";
 
 
 import './App.css'
@@ -63,7 +65,7 @@ function App() {
           </div>
           <div className='description-block-text-link link'>Узнать подробнее</div>
         </div>
-        <img className='description-image' src={description} />
+        <img className='description-image back' src={description} />
       </div>
       <div className='capabilities'>
         <div className='capabilities-title'>Возможности</div>
@@ -142,8 +144,31 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='application'>
-
+        <div className='description application'>
+          <div className='description-block'>
+            <div className='description-block-title'>
+              Сосредоточьтесь на экономии финансов
+            </div>
+            <div className='description-block-text'>
+              Мы помогаем вам отслеживать ваши привычки в расходах, чтобы вы могли легко определить и сократить ненужные расходы. Просто присоединяйтесь сегодня, чтобы начать!
+            </div>
+            <div className='icons-list'>
+              <div className='icon'><FaGooglePlay /></div>
+              <div className='icon'><IoLogoAppleAppstore /></div>
+            </div>
+          </div>
+          <img className='description-image' src={description} />
+        </div>
+        <div className='contact'>
+          <div className='contact-text'>
+            <div className='contact-text-title'>Напишите нам</div>
+            <div className='contact-text-description'>Остались вопросы или опасения? Просто заполните форму ниже, и наша служба поддержки свяжется с вами в течение 24 часов.</div>
+          </div>
+          <div className='contact-form'>
+            <input placeholder="Имя" />
+            <input placeholder="Телефон" />
+            <div className='btn btn-color'>Отправить</div>
+          </div>
         </div>
       </div>
     </>
