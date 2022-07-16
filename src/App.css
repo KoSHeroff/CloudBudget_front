@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+.icon > img {
+    height: 100%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    padding: 12px 31px;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #ED4C5C;
+
+    transition: .4s background-color, .2s color;
+}
+
+.btn-fill {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    background-color:#ED4C5C;
+    color: #FFFFFF;
+}
+
+.btn-fill:hover {
+    background-color: #FFFFFF;
+    color: #ED4C5C;
+}
+
+.section {
+
+}
+
+.greetings {
+    display: flex; 
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+    
+    padding-top: 17px;
+
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+}
+
+.header-logo {
+    display: flex;
+    gap: 10px;
+}
+
+.header-logo-icon {
+    height: 17.4px;
+}
+
+.header-logo-name {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 18px;
+
+    color: #FFFFFF  
+}
+
+.header-menu {
+    display: flex;
+    gap: 25px;
+
+    width: 485px;
+
+    color: #FFFFFF;
+}
+
+.header-menu-element {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
