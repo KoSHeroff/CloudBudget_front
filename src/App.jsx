@@ -144,31 +144,47 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='description application'>
-          <div className='description-block'>
-            <div className='description-block-title'>
-              Сосредоточьтесь на экономии финансов
-            </div>
-            <div className='description-block-text'>
-              Мы помогаем вам отслеживать ваши привычки в расходах, чтобы вы могли легко определить и сократить ненужные расходы. Просто присоединяйтесь сегодня, чтобы начать!
-            </div>
-            <div className='icons-list'>
-              <div className='icon'><FaGooglePlay /></div>
-              <div className='icon'><IoLogoAppleAppstore /></div>
-            </div>
+      </div>
+      <div className='description application'>
+        <div className='description-block'>
+          <div className='description-block-title'>
+            Сосредоточьтесь на экономии финансов
           </div>
-          <img className='description-image' src={description} />
+          <div className='description-block-text'>
+            Мы помогаем вам отслеживать ваши привычки в расходах, чтобы вы могли легко определить и сократить ненужные расходы. Просто присоединяйтесь сегодня, чтобы начать!
+          </div>
+          <div className='icons-list'>
+            <div className='icon'><FaGooglePlay /></div>
+            <div className='icon'><IoLogoAppleAppstore /></div>
+          </div>
         </div>
-        <div className='contact'>
-          <div className='contact-text'>
-            <div className='contact-text-title'>Напишите нам</div>
-            <div className='contact-text-description'>Остались вопросы или опасения? Просто заполните форму ниже, и наша служба поддержки свяжется с вами в течение 24 часов.</div>
+        <img className='description-image' src={description} />
+      </div>
+      <div className='contact'>
+        <div className='contact-text'>
+          <div className='contact-text-title'>Напишите нам</div>
+          <div className='contact-text-description'>Остались вопросы или опасения? Просто заполните форму ниже, и наша служба поддержки свяжется с вами в течение 24 часов.</div>
+        </div>
+        <div className='contact-form'>
+          <input placeholder="Имя" />
+          <input placeholder="Телефон" />
+          <div className='btn btn-color'>Отправить</div>
+        </div>
+      </div>
+      <div className='footer'>
+        <div className='footer-info'>
+          <div className='footer-info-title'>
+            Адрес
           </div>
-          <div className='contact-form'>
-            <input placeholder="Имя" />
-            <input placeholder="Телефон" />
-            <div className='btn btn-color'>Отправить</div>
+          <div className='footer-info-text'>
+          Pipang Ltd, Griva Digeni,<br />81-83 Jacovides Tower, 1st Floor<br />1090 Picosia USA
           </div>
+          <div className='footer-info-copyright'>
+            Copyright 2021 CloudBudget
+          </div>
+          <a href="https://github.com/KoSHeroff" className='footer-info-created'>
+            Create by KoSHer
+          </a>
         </div>
       </div>
     </>
